@@ -7,11 +7,21 @@
 a:link, a:visited {
 	color: black;
 	text-decoration: none;
+	padding: 0;
 }
 	@media only screen and (max-width: 568px) {
 	a:link, a:visited {
-			color: white;
+			color: black;
 		}
+
+	nav a:link, nav a:visited {
+			color: white;
+			padding: 10px;
+		}
+
+	nav a:hover {
+			color: #bcd5d1;
+		}	
 	}
 
 a:hover {
@@ -25,6 +35,11 @@ a:hover {
 	text-align: center;
 	padding: 10px;
 }
+	@media only screen and (max-width: 768px) {
+		.update input {
+			width: 100%;
+		}
+	}
 
 
 .update input:focus {
@@ -42,11 +57,17 @@ a:hover {
 	width: 30%;
 	background-color: black;
 	color: white;
+	text-align: center;
 	padding: 10px;
 	outline: none;
 	border-color: black;
 	clear: both;
 }
+	@media only screen and (max-width: 768px) {
+		.update button {
+			width: 50%;
+		}
+	}
 
 .update button:focus {
 	outline: none !important;
@@ -74,7 +95,7 @@ footer {
 		/*	HEADER */
 
 nav {
-	width: 470px;
+	width: 400px;
 	height: 70px;
 	margin-left: auto;
 	margin-right: auto;
@@ -119,7 +140,7 @@ nav li {
 .hamburger {
 	position: fixed;
 	top: 25px;
-	right: 25px;
+	right: 15px;
 	z-index: 90;
 	display: none;
 }
@@ -131,16 +152,17 @@ nav li {
 
 .hamburger span {
 	display: block;
-	width: 40px;
-	height: 2px;
+	width: 35px;
+	height: 5px;
 	background-color: black;
-	margin: 3px 0px;
+	margin: 4px 0px;
+	padding: 1px;
 }
 
 .return-hamburger {
 	position: absolute;
 	top: 25px;
-	right: 30%;
+	right: 15px;
 	z-index: 90;
 	display: none;
 }
@@ -152,10 +174,11 @@ nav li {
 
 .return-hamburger span {
 	display: block;
-	width: 40px;
-	height: 2px;
+	width: 35px;
+	height: 5px;
 	background-color: white;
-	margin: 3px 0px;
+	margin: 4px 0px;
+	padding: 1px;
 }			
 
 .logo {
@@ -217,7 +240,7 @@ section p {
 }
 
 section .read-more{
-	width: 20%;
+	width: 100px;
 	font-size: 15px;
 	border: solid black 1px;
 	text-align: center;
@@ -227,7 +250,7 @@ section .read-more{
 }
 
 section .read-less{
-	width: 20%;
+	width: 100px;
 	font-size: 15px;
 	border: solid black 1px;
 	text-align: center;
@@ -237,12 +260,12 @@ section .read-less{
 }
 
 section .continue {
-	width: 60%;
+	width: 100%
 	font-size: 15px;
 	font-style: italic;
 	margin-left: auto;
 	margin-right: auto;
-	float: right;
+	text-align: center;
 }
 
 .post-left {
@@ -250,7 +273,7 @@ section .continue {
 	float: left;
 	margin-top: 40px;
 }
-	@media only screen and (max-width: 568px) {
+	@media only screen and (max-width: 768px) {
 		.post-left{
 			width: 100%;
 		}
@@ -266,7 +289,7 @@ section .continue {
 	margin-top: 40px;
 }
 	
-	@media only screen and (max-width: 568px) {
+	@media only screen and (max-width: 768px) {
 		.post-right{
 			width: 100%;
 		}
@@ -333,20 +356,20 @@ aside img {
 }
 
 .gallery {
-	width: 200px;
+	width: 80%;
 	padding: 20px 0px;
 	margin-bottom: 20px;
 }
 
 .right-arrow {
 	float: right;
-	width: 30px;
+	width: 10%;
 	padding-top: 100px;
 }
 
 .left-arrow {
 	float: left;
-	width: 30px;
+	width: 10%;
 	padding-top: 100px;
 }
 
@@ -388,20 +411,29 @@ h4 {
 	float: left;
 }
 
+
+
+	@media only screen and (max-width: 568px) {
+		.post-pic-list{
+			width: 100%;
+		}
+	}	
 .continue-list {
 	font-size: 15px;
 	width: 50%;
 	padding-top: 10px;
 	font-style: italic;
+	color: blue;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 60px;
-
+	padding-top: 0;
 }
 
 		/*	INDIVIDUAL POSTS */
 .post-pic{
 	width: 100%;
+	margin-bottom: 20px;
 }
 
 		/*	CONTACT */
@@ -417,10 +449,28 @@ h4 {
 }
 
 .contact-sheet input {
-	width: 300px;
+	width: 340px;
 	font-size: 14px;
 	padding-top: 5px;
 }
+	
+	@media only screen and (max-width: 568px) {
+		.contact-sheet input {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		.contact-sheet input {
+			width: 100%;	
+		}
+	}
+
+.message {
+	width: 340px;
+	height: 100px;
+}
+
 
 .contact-sheet button {
 	width: 150px;
@@ -431,8 +481,14 @@ h4 {
 	border-color: black;
 	margin: 30px 0px 0px 0px;
 	font-size: 16px;
-	font-family: "times new roman";
+	font-family: "Times New Roman";
 }
+
+	@media only screen and (max-width: 320px) {
+		.contact-sheet button {
+			width: 100px;	
+		}
+	}
 
 /*Thank you page*/
 .archive-page img {
@@ -459,4 +515,5 @@ h4 {
 	padding-top: 10px;
 	font-size: 24px;
 }
+
 

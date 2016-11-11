@@ -19,8 +19,6 @@ var imageIndex= 0;
 //<script type="text/javascript" src="path/to/instafeed.min.js"></script>
 
 
-
-
 function prevImage(){
 	if (imageIndex > 0){	
 		imageIndex--;
