@@ -7,7 +7,7 @@
 a:link, a:visited {
 	color: black;
 	text-decoration: none;
-	padding: 0;
+	
 }
 	@media only screen and (max-width: 568px) {
 	a:link, a:visited {
@@ -29,6 +29,8 @@ a:hover {
 
 }
 
+		/* INPUTS */
+
 .update input {
 	width: 60%;
 	float: left;
@@ -41,7 +43,6 @@ a:hover {
 		}
 	}
 
-
 .update input:focus {
 	outline: none !important;
 	border-color: black;
@@ -50,6 +51,15 @@ a:hover {
 .contact-sheet input:focus {
 	outline: none !important;
 	border-color: black;
+}
+
+textarea:focus {
+	outline: none !important;
+	border-color: black;
+	border-width: 2px;
+}
+textarea {
+	font-size: 14px;
 }
 
 
@@ -74,18 +84,17 @@ a:hover {
 	border-color: grey;
 }	
 
+		/*	MAIN */
 
 body { 
 	width: 100%;
 	height: auto;
+	/*background-image: url('../images/Gray-Wood-Wall.jpg');*/
 }
-
-
 
 footer {
 	clear: both;
 	padding-top: 50px;
-	
 }
 
 
@@ -95,7 +104,7 @@ footer {
 		/*	HEADER */
 
 nav {
-	width: 400px;
+	width: 460px;
 	height: 70px;
 	margin-left: auto;
 	margin-right: auto;
@@ -119,7 +128,7 @@ nav {
 		}
 	}	
 
-nav li {
+nav ul li {
 	list-style-type: none;
 	float: left;
 	padding: 0px 20px;
@@ -127,12 +136,13 @@ nav li {
 	font-weight: bold;	
 }
 	@media only screen and (max-width: 568px) {
-		nav li {
+		nav ul li {
 			height: auto;
 			display: block;
 			color: #fff;
-			font-size: 1.3em;
+			font-size: 1.2em;
 			line-height: 2em;
+			padding-bottom: 10px;
 		}
 	}
 
@@ -340,6 +350,17 @@ aside img {
 	margin-bottom: 20px;
 }
 
+.insta {
+	width: 48%;
+	height: 25%;
+	float: left;
+	padding-top: 5px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-right: 5px;
+}
+
+
 .update {
 	border: solid black 3px;
 	margin-bottom: 30px;	
@@ -394,6 +415,10 @@ footer img {
 
 h4 {
 	font-size: 18px;
+}
+
+h4 a {
+	padding: 0;
 }
 
 .post-date-list{
@@ -470,6 +495,12 @@ h4 {
 	width: 340px;
 	height: 100px;
 }
+
+	@media only screen and (max-width: 568px) {
+		.message {
+			width: 100%;
+		}
+	}
 
 
 .contact-sheet button {

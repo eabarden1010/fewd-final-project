@@ -35,17 +35,17 @@
 			<button>Submit</button>
 		</div>	
 
-		<h2>Lastest Adventure</h2>
-			<p>Add pictures here--or Instagram feed</p>
+		<h2><a href="https://www.instagram.com/kirkusjones/">Lastest Adventures</a></h2>
+				<img class="insta" src="images/kirkus.png">
+				<img class="insta" src="images/kirkus2.png">
+				<img class="insta" src="images/kirkus3.png">
+				<img class="insta" src="images/kirkus4.png">
+
+				<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
 
 		<h2><a href="archive.html">Archive</a></h2>
 			<div class="archive">
-				<ul>
-					<li>2013</li>
-					<li>2014</li>
-					<li>2015</li>
-					<li>2016</li>
-				</ul>
+				<p>Click the title above to search for an older post (2013-2016).</p>
 			</div>
 				
 		<h2>Inspired Playlist</h2>
@@ -58,8 +58,10 @@
 
 		<img class="post-pic" src="images/book-coffee-top.jpg">
 		<h4>Please feel free to contact with any inquires.</h4>
+		
 		<div class="contact-sheet">	
-			
+		
+		<form action="http://code.kimgoulbourne.com/mailto/send_email.php" method="post" target="form-success">	
 			<div class="contact-input-titles">Name</div>
 				<p><input type="text" name="name" class="basic-info">
 
@@ -71,10 +73,13 @@
 				class="basic-info">
 			
 			<div class="contact-input-titles">Message</div>
-				<p><input type="text" name="message"
-				class="message">
+				<p><textarea name="message" rows="5" cols="20" class="message"></textarea>
 			<p>		
-			<a href="thankyou.html"><button>Submit</button></a>	
+			<a href="thankyou.html"><button>Submit</button></a>
+		</form>
+		
+		<iframe name="form-success" width="0" height="0" style="display:none"></iframe>
+		
 		</div>		
 	</section>	
 
